@@ -204,7 +204,7 @@ class MirrorListener(listeners.MirrorListeners):
                 uname = f'<a href="tg://user?id={self.message.from_user.id}">{self.message.from_user.first_name}</a>'
             chat_id = str(self.message.chat.id)
             count = len(files)
-            if OWNER_ID  == int(chat_id):
+            if OWNER_ID  == int(chat_id) and count != 1:
                 msg = f'<b>Name:</b> <code>{link}</code>\n'
                 msg += f'<b>Total Files:</b> {count}'
                 sendMessage(msg, self.bot, self.update)

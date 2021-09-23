@@ -41,7 +41,7 @@ class _BotCommands:
         self.ZipLeechCommand = 'zipleech2'
         self.QbLeechCommand = 'qbleech2'
         self.QbTarLeechCommand = 'qbtarleech2'
-        self.QbUnzipLeechCommand = 'qbunzipleech'2
+        self.QbUnzipLeechCommand = 'qbunzipleech2'
         self.QbZipLeechCommand = 'qbzipleech2'
         self.LeechWatchCommand = 'leechwatch2'
         self.LeechTarWatchCommand = 'leechtarwatch2'

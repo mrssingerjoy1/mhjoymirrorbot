@@ -37,7 +37,7 @@ class _BotCommands:
         self.SetThumbCommand = 'setthumb2'
         self.LeechCommand = 'leech2'
         self.TarLeechCommand = 'tarleech2'
-        self.UnzipLeechCommand = 'unzipleech'2
+        self.UnzipLeechCommand = 'unzipleech2'
         self.ZipLeechCommand = 'zipleech2'
         self.QbLeechCommand = 'qbleech2'
         self.QbTarLeechCommand = 'qbtarleech2'

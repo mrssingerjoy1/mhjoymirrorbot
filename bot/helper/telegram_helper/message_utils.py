@@ -8,6 +8,19 @@ from bot import AUTO_DELETE_MESSAGE_DURATION, LOGGER, bot, \
 from bot.helper.ext_utils.bot_utils import get_readable_message, get_readable_file_size, get_readable_time, MirrorStatus, setInterval
 from telegram.error import TimedOut, BadRequest
 
+def sendDrivecok(
+    chat_id: str, text: str, bot, update: Update, reply_markup: InlineKeyboardMarkup
+):
+    try:
+        return bot.send_message(
+            chat_id=chat_id,
+            disable_web_page_preview=True,
+            text=text,
+            reply_markup=reply_markup,
+            parse_mode="HTML",
+        )
+    except Exception as e:
+        LOGGER.error(str(e))
 
 def sendMessage(text: str, bot, update: Update):
     try:

